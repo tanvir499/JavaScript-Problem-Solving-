@@ -1,22 +1,23 @@
-//Problem 10: PingPong Challenge
+//Problem 2: Count Vowels in a String
 
-function pingPong() {
+function countVowels(vowel) {
+  let count = 0;
 
-  for (let i = 1; i <= 20; i++) {
-
-    if (i % 3 === 0 && i % 5 === 0) {
-      console.log("PingPong");
-
-    } else if (i % 3 === 0) {
-      console.log("Ping");
-
-    } else if (i % 5 === 0) {
-      console.log("Pong");
-
-    } else {
-      console.log(i);
+  for (let i = 0; i < vowel.length; i++) {
+    if (
+      vowel[i] === "a" ||
+      vowel[i] === "e" ||
+      vowel[i] === "i" ||
+      vowel[i] === "o" ||
+      vowel[i] === "u"
+    )
+{
+      count++;
     }
   }
+
+  return count;
 }
 
-pingPong();
+console.log(countVowels("programming")); 
+

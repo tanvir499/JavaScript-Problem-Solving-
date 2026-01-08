@@ -1,7 +1,9 @@
-//Problem 4: Find the Maximum Number
 
-function findMax(maximum) {
-  return Math.max(...maximum);
+//Problem 3: Check for Palindrome
+function Palindrome(str) {
+  let reversed = str.split("").reverse().join("");
+  return str === reversed;
 }
 
-console.log(findMax([5, 1, 9, 3])); 
+console.log(Palindrome("madam")); // true
+console.log(Palindrome("hello")); // false
